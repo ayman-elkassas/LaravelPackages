@@ -70,6 +70,9 @@ class HomeController extends Controller
 //        User::role('writer')->get();
 //        User::permission('edit post')->get();
 
+        //Todo:remove permission from user
+        auth()->user()->revokePermissionTo('edit post');
+
         return view('home');
     }
 }
