@@ -21,4 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//Spatie Media Lib
 Route::view('profile','profile')->name('profile');
+Route::resource('avatar','AvatarController');
