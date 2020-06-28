@@ -71,7 +71,7 @@ class HomeController extends Controller
 //        User::permission('edit post')->get();
 
         //Todo:remove permission from user
-        auth()->user()->revokePermissionTo('edit post');
+//        auth()->user()->revokePermissionTo('edit post');
 
         return view('home');
     }
