@@ -24,3 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Spatie Media Lib
 Route::view('profile','profile')->name('profile');
 Route::resource('avatar','AvatarController');
+
+Route::get('login/github', 'Auth\LoginController@redirectToProvider');
+Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');

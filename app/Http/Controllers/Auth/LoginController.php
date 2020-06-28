@@ -59,6 +59,8 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('github')->user();
 
+        return dd($user->getId());
+
         // $user->token;
     }
 }

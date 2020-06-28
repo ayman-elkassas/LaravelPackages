@@ -57,7 +57,7 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                <button class="btn btn-primary">
+                                <button href="login/github" class="btn btn-primary">
                                     Login with github
                                 </button>
 
